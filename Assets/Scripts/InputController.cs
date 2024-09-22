@@ -8,7 +8,7 @@ public class InputController : MonoBehaviour
     private float _velocity;
     [SerializeField] private float _smoothTime;
     private PlayerController _playerController;
-
+    
     void Awake()
     {
         _playerController = GetComponent<PlayerController>(); 
