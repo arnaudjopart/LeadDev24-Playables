@@ -67,9 +67,6 @@ public class AnimationSystem
         _graph = PlayableGraph.Create("Animation System");
         var animationOutput = AnimationPlayableOutput.Create(_graph, "output", anim);
 
-        //var idleAnimationPlayable = AnimationClipPlayable.Create(_graph, idleAnim);
-        //animationOutput.SetSourcePlayable(idleAnimationPlayable);
-
         _topLevelMixer = AnimationMixerPlayable.Create(_graph, 2);
         animationOutput.SetSourcePlayable(_topLevelMixer);
 
